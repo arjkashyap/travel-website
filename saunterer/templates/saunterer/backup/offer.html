@@ -1,0 +1,240 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+{% load staticfiles %}
+
+<title>Saunterers: Offers</title>
+
+<link href="{% static "saunterer/css/bootstrap.css"%}" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{%  static "saunterer/js/jquery-1.11.0.min.js" %}"></script>
+<!-- Custom Theme files -->
+<link href="{% static "saunterer/css/style.css" %}" rel="stylesheet" type="text/css" media="all"/>
+
+
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, , SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+<!-- animated-css 
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		
+		<script>
+		 new WOW().init();
+		</script>
+		-->
+<!-- animated-css -->
+
+
+</head>
+<body>
+
+<!--header start here-->
+<div class="header">
+   <div class="container">
+     <div class="header-main">
+	   <div class="logo wow bounceInLeft" data-wow-delay="0.3s">
+	    <a href= "{% url "saunterer:index" %}"><img src="{% static "saunterer/images/log.png" %}"  alt=""></a>
+	   </div>
+	   <div class="top-navg">
+			   <span class="menu"> <img src="{% static "saunterer/images/icon.png" %}" alt=""/></span>		
+			    <nav class="cl-effect-13">				
+				<ul class="res">
+					<li><a href="{% url "saunterer:index" %}">Home</a></li>
+					<li><a href="{% url "saunterer:about" %}">About</a></li>
+					<li><a class="active" href="{% url "saunterer:offer" %}">Walks</a></li>
+		<!--		<li><a href="{% url "saunterer:gallery" %}">Gallery</a></li> -->
+					<li><a href="{% url "saunterer:contact" %}">Contact</a></li>
+				</ul>
+			 </nav>
+			<!-- script-for-menu -->
+				 <script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.res" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>					
+	   </div>
+	    <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+<!--header end here-->
+
+<!--hotel start here-->
+<div class="hotel">
+	<div class="container">
+		<div class="hotel-main">
+             <div class="hotel-head">
+             	<h1>Hottest Packages: </h1>
+             	<span class="lft-bar-welcom"> </span>
+             	<span class="rit-bar-welcom"> </span>
+             </div>
+             <div class="hotel-bottom">
+             	<!-- experts -->
+				 
+				<div class="experts wow bounceInRight" data-wow-delay="0.3s">
+						<div class="col-md-3 bottom-grid">
+							<div class="btm-right">
+								<img src="{% static "saunterer/images/h1.jpg" %}" alt=" " />
+									
+									<div class="captn">
+										<h4>Old Delhi</h4>
+										<p>It was once filled with mansions of nobles and members of 
+										the royal court, along with elegant mosques and gardens. 
+										Today, it still serves as the symbolic heart of metropolitan Delhi. </p>	
+									</div>
+							</div>
+						</div>
+						<div class="col-md-3 bottom-grid">
+							<div class="btm-right">
+								<img src="{% static "saunterer/images/h2.jpg" %}" alt=" " />
+									<div class="captn">
+										<h4>Connaught Place</h4>
+										<p>One of the largest financial, commercial and business centres in New Delhi, India. 
+										It is often abbreviated as CP and houses the headquarters of several noted Indian firm </p>
+									</div>
+							</div>
+						</div>
+						<div class="col-md-3 bottom-grid">
+							<div class="btm-right">
+								<img src="{% static "saunterer/images/h3.jpg" %}" alt=" " />
+									<div class="captn">
+										<h4>Mehrauli </h4>
+										<p>Mehrauli is one of the seven ancient cities that make up the present state of Delhi. 
+										This is where the well known astronomer Varaha-Mihira of Vikramaditya’s court lived. </p>	
+									</div>
+							</div>
+			
+						</div>
+						<div class="col-md-3 bottom-grid">
+							<div class="btm-right">
+								<img src="{% static "saunterer/images/h4.jpg" %}" alt=" " />
+									<div class="captn">
+										<h4>Karol Bagh</h4>
+										<p>Mixed residential-cum-commercial neighbourhood known for its shopping streets, 
+										like the Ghaffar Market and Ajmal Khan Road.</p>	
+									</div>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+				</div>
+				<!-- //experts -->
+             </div>
+		</div>
+	</div>
+</div>
+<!--services strat here-->
+<!--
+<div class="services">
+	<div class="container">
+		<div class="services-main">			
+			<div class="services-top">
+				<h2>Our Services</h2>
+				<span class="lft-bar-serv"> </span>
+             	<span class="rit-bar-serv"> </span>
+			</div>
+			<div class="services-bottom">
+				<div class="col-md-4 services-grid wow bounceIn" data-wow-delay="0.4s">
+					<img src="{% static "saunterer/images/s1.png" %}" alt="">
+					<h4>Regular tours at 9 am and 5 pm</h4>
+<p>We host our customers from 9 am to 5 pm regularly</p>
+				</div>
+				<div class="col-md-4 services-grid wow bounceIn" data-wow-delay="0.4s">
+					<img src="{% static "saunterer/images/s2.png" %}" alt="">
+					<h4>Food</h4>
+					<p>India is well known for its diverse range of food articles. We believe your journey is incomplete
+					till you have tried the best available in delhi.
+					</p>
+				</div>
+				<div class="col-md-4 services-grid wow bounceIn" data-wow-delay="0.4s">
+					<img src="{% static "saunterer/images/s3.png" %}" alt="">
+					<h4>Explore</h4>
+					<p>To help you explore this city better, we have the best Delhi Tour Packages for you. We showcase 
+					different faces of the city and lets you indulge in the local lifestyle.</p>
+				</div>
+			  <div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--services end here-->
+-->
+<!--ser-advices start here-->
+<!--
+<div class="advices">
+	<div class="container">
+            <div class="advice-list-main">
+            	<div class="advice-lidt-top">
+					<h3>Services list</h3>
+					<span class="lft-bar-advice"> </span>
+	             	<span class="rit-bar-advice"> </span>
+             	</div>
+             	<div class="advice-lidt-bottom wow bounceInLeft" data-wow-delay="0.3s">		
+				<div class="col-md-4 advice-list">
+					<ul>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">Sed ut perspiciatis unde omnis error</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">The other hand denounce with righteou</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">Sed ut perspiciatis unde omnis error</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">But must explain this mistaken idea</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">Who pursues desires to obtain pain</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 advice-list">
+					<ul>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">Accusantium doloremque laudantium</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">But must explain this mistaken idea</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">Who pursues desires to obtain pain</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">Sed ut perspiciatis unde omnis error</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">The other hand denounce with righteou</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 advice-list">
+					<ul>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span> <a href="#">The other hand denounce with righteou</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span> <a href="#">Sed ut perspiciatis unde omnis error</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">But must explain this mistaken idea</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">Who pursues desires to obtain pain</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span><a href="#">Sed ut perspiciatis unde omnis error</a></li>
+					</ul>
+				</div>
+			<div class="clearfix"> </div>
+		   </div>		
+		</div>
+	</div>
+</div>
+<!--footer start here-->
+<div class="map">
+  <div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-4 ftr-grids  wow bounceIn" data-wow-delay="0.4s">
+				<h4>Get in Touch</h4>
+				<ul class="get-touch">
+				
+					<li><span class="email"> </span><a href="mailto:connect@thesaunterers.com">connect@thesaunterers.com</a> </li>
+		<!--	<li><span class="phone"> </span>+91 86795 40001</li> -->
+				</ul>
+			</div>
+			<div class="col-md-4 ftr-grids  wow bounceIn" data-wow-delay="0.4s">
+				<h4>Follow Us</h4>
+				<ul class="mid-grid">
+					<li><a href="#"><span class="tw"> </span></a></li>
+					<li><a href="#"><span class="gmail"> </span></a> </li>
+					<li><a href="#"><span class="inst"> </span></a> </li>
+					<li><a href="#"><span class="pri"> </span></a> </li>					
+				</ul>
+			</div>
+			
+
+</body>
+</html>
+

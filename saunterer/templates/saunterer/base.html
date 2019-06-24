@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+{% load staticfiles %}
+
+<title>Saunterers: A local experience </title>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap files -->
+<link href="{% static "saunterer/css/bootstrap.css" %}" rel="stylesheet" type="text/css" media="all">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static "saunterer/js/jquery-1.11.0.min.js" %}"></script>
+
+<!-- Custom Theme files -->
+<link href="{% static "saunterer/booking/css/style.css" %}" rel="stylesheet" type="text/css" media="all"/>
+<link href="{% static "saunterer/css/style1.css" %}" rel="stylesheet" type="text/css" media="all" />	
+
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Saunterer Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+<!-- //end-smoth-scrolling -->
+
+<script src="{% static "saunterer/js/responsiveslides.min.js" %}"></script>
+<script>
+    // can also use "$(window).load(function() {"
+    $(function () {
+      $("#slider2").responsiveSlides({
+        auto: true,
+        pager: true,
+        speed: 300,
+        namespace: "callbacks",
+      });
+    });
+  </script>
+
+<!-- requried-jsfiles-for owl -->
+		<link href="{% static "saunterer/css/owl.carousel.css" %}" rel="stylesheet">
+		<script src="{% static "saunterer/js/owl.carousel.js" %}"></script>
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo").owlCarousel({
+						items : 3,
+						lazyLoad : true,
+						autoPlay : false,
+						pagination : true,
+					});
+				});
+			</script>
+
+
+</head>
+<body>
+
+<!--header start here-->
+<div class="banner">
+ <div class="header">
+   <div class="container">
+     <div class="header-main">
+	   <div class="logo wow bounceInLeft" data-wow-delay="0.3s">
+	     <a href= "{% url "saunterer:index" %}"><img src="{% static "saunterer/images/log.png" %}"  alt=""></a>
+	   </div>
+	   <div class="top-navg">
+			   <span class="menu"> <img src="{% static "saunterer/images/icon.png" %}" alt=""/></span>	
+			 <nav class="cl-effect-13">				
+				<ul class="res">
+					<li><a class="active" href="{% url "saunterer:index" %}">Home</a></li>
+					<li><a href="{% url "saunterer:about" %}">About</a></li>
+					<li><a href="{% url "saunterer:offer" %}">Walks</a></li>
+			<!--		<li><a href="{% url "saunterer:gallery" %}">Gallery</a></li> -->
+					<li><a href="{% url "saunterer:contact" %}">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- script-for-menu -->
+				 <script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.res" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>		    			
+	   </div>
+	    <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+
+<!--header end here-->
+
+{% block content %}
+
+{% endblock %}
+
+
+
+
+
+</body>
+</html>

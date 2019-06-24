@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+{% load staticfiles %}
+
+<title>Saunterers: About</title>
+<link href="{% static "saunterer/css/bootstrap.css"%}" rel="stylesheet" type="text/css" media="all">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static "saunterer/js/jquery-1.11.0.min.js" %}"></script>
+<!-- Custom Theme files -->
+<link href="{% static "saunterer/css/style.css" %}" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Saunterer commercial Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+<!-- //end-smoth-scrolling -->
+<link rel="stylesheet" href="{% static "saunterer/css/flexslider.css" %}" type="text/css" media="screen" />
+<!-- animated-css for moving text effect
+		<link href="{% static "saunterer/css/animate.css" %}" rel="stylesheet" type="text/css" media="all">
+		<script src="{% static "saunterer/js/wow.min.js" %}"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		-->
+<!-- animated-css -->
+</head>
+<body>
+<!--header start here-->
+ <div class="header">
+   <div class="container">
+     <div class="header-main">
+		<div class="logo wow bounceInLeft" data-wow-delay="0.3s">
+	     <a href= "{% url "saunterer:index" %}"><img src="{% static "saunterer/images/log.png" %}"  alt=""></a>
+	   </div>
+	   <div class="top-navg">
+			   <span class="menu"> <img src="{% static "saunterer/images/icon.png" }" alt=""/></span>		
+			  <nav class="cl-effect-13">				
+				<ul class="res">
+					<li><a href="{% url "saunterer:index" %}">Home</a></li>
+					<li><a class="active" href="{% url "saunterer:about" %}">About</a></li>
+					<li><a href="{% url "saunterer:offer" %}">Walks</a></li>
+					<li><a href="{% url "blog:blog" %}">Blog</a></li>
+					<li><a href="{% url "saunterer:contact" %}">Contact</a></li>
+				</ul>
+			 </nav>
+			<!-- script-for-menu -->
+				 <script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.res" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>					
+	   </div>
+	    <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+<!--header end here-->
+
+<!--about start here-->
+<div class="about">
+	<div class="container">
+		<div class="about-main">
+			 <h1>About Us</h1>
+			 <span class="lft-bar-about"> </span>
+			 <span class="rit-bar-about"> </span>
+           <div class="col-md-6 about-left wow bounceInLeft" data-wow-delay="0.3s">
+           	   <img src="{% static "saunterer/images/ab.png" %}" alt="" class="img-responsive">          	
+           </div>
+           <div class="col-md-6 about-right wow bounceInRight" data-wow-delay="0.3s">
+           	 <h4>A mission to make people experience the city</h4>
+						<p>With a mission to make people experience the city the way we see it,
+						 The Saunterers came into existence. We're a group of university students
+						  encouraged to change the perspective of India by providing more insights 
+							into this wonderful country, starting from the centre of the country, New Delhi.
+							 Being passionate travellers ourselves, we firmly believe that walking is the 
+							 best way to discover a new place. We have walked the trails ourselves to bring 
+							 out the best way to make you immerse yourselves into the local culture, traditions,
+							  food and history of the destination. Keeping in mind the diverse needs and 
+							interests of the people, we have options of customized walking tours so that
+							 you can explore what interests you the most while being on a budget.
+
+					How we are different?
+
+					We're a team of passionate students who are motivated to provide travellers with a truly local 
+					experience while being on a budget. We customize our tours according to your interests. Each of
+ 					our tours has fixed itineraries but no script so that we can indulge you into the conversations 
+					with things you're passionate about while discovering the city on foot.</p>
+
+					<!-- A List which can be modified later
+             <div class="about-list">
+	             	<div class="ab-list-left">
+		               <ul>
+		               	<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>Accusantium doloremque</li>
+		               	<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>Laudantium accusantium</li>
+		               	<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>Accusantium doloremque</li>
+		               	<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>Accusantium doloremque</li>
+		               </ul>
+	               </div>
+	               <div class="ab-list-right">
+		               <ul>
+		               	<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>Accusantium doloremque</li>
+		               	<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>ALaudantium accusantium</li>
+		               	<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>Accusantium doloremque</li>
+		               	<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>Accusantium doloremque</li>
+		               </ul>
+		          </div>
+							-->
+		        <div class="clearfix"> </div>
+              </div>
+           </div>
+          <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--
+<div class="about-middle">
+	<div class="container">
+		      <div class="testimo">
+				 	   <h3>Testimonial</h3>
+				 	   <span class="lft-bar-testi"> </span>
+				 	   <span class="rit-bar-testi"> </span>
+			  </div>
+		   <section class="slider">
+		 <div class="flexslider">
+			<ul class="slides">
+			  <li>
+			  	<div class="banner-bottom">			  		
+					<div class="about-midd-main">
+							<h4>Duis aute irure dolor in reprehenderit.</h4>
+							<p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+			 	</div>
+			  </li>
+			  <li>
+			 	<div class="banner-bottom">				 	
+					<div class="about-midd-main">
+							<h4>Duis aute irure dolor in reprehenderit.</h4>
+							<p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+			 	</div>
+			  </li>
+			  <li>
+			 	<div class="banner-bottom">			 	
+					<div class="about-midd-main">
+							<h4>Duis aute irure dolor in reprehenderit.</h4>
+							<p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+			 	</div>
+			  </li>
+		    </ul>
+		 </div>
+		 <div class="clearfix"> </div>
+	  </section>
+	</div>
+</div>
+-->
+
+
+<!-- FlexSlider -->
+				  <script defer src="{% static "saunterer/js/jquery.flexslider.js" %}"></script>
+				  <script type="text/javascript">
+					$(function(){
+					 
+					});
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				  </script>
+			<!-- FlexSlider -->
+
+
+<!--about end here-->
+<!--footer start here-->
+<div class="map">
+  <div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-4 ftr-grids  wow bounceIn" data-wow-delay="0.4s">
+				<h4>Get in Touch</h4>
+				<ul class="get-touch">
+				
+					<li><span class="email"> </span><a href="mailto:connect@thesaunterers.com">connect@thesaunterers.com</a> </li>
+					<!--	<li><span class="phone"> </span>+91 86795 40001</li> -->
+				</ul>
+			</div>
+			<div class="col-md-4 ftr-grids  wow bounceIn" data-wow-delay="0.4s">
+				<h4>Follow Us</h4>
+				<ul class="mid-grid">
+					<li><a href="#"><span class="tw"> </span></a></li>
+					<li><a href="#"><span class="gmail"> </span></a> </li>
+					<li><a href="#"><span class="inst"> </span></a> </li>
+					<li><a href="#"><span class="pri"> </span></a> </li>					
+				</ul>
+			</div>
+			
+<!--footer end here-->
+</body>
+</html>

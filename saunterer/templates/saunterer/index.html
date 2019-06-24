@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+{% load staticfiles %}
+<title>Saunterers: A local experience </title>
+
+<!-- Bootstrap files -->
+<link href="{% static "saunterer/css/bootstrap.css" %}" rel="stylesheet" type="text/css" media="all">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static "saunterer/js/jquery-1.11.0.min.js" %}"></script>
+
+<!-- Custom Theme files -->
+<link href="{% static "saunterer/css/style.css" %}" rel="stylesheet" type="text/css" media="all"/>
+<link href="{% static "saunterer/css/style1.css" %}" rel="stylesheet" type="text/css" media="all" />	
+
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Saunterer Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+<!-- //end-smoth-scrolling -->
+
+<script src="{% static "saunterer/js/responsiveslides.min.js" %}"></script>
+<script>
+    // can also use "$(window).load(function() {"
+    $(function () {
+      $("#slider2").responsiveSlides({
+        auto: true,
+        pager: true,
+        speed: 300,
+        namespace: "callbacks",
+      });
+    });
+  </script>
+
+<!-- requried-jsfiles-for owl -->
+		<link href="{% static "saunterer/css/owl.carousel.css" %}" rel="stylesheet">
+		<script src="{% static "saunterer/js/owl.carousel.js" %}"></script>
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo").owlCarousel({
+						items : 3,
+						lazyLoad : true,
+						autoPlay : false,
+						pagination : true,
+					});
+				});
+			</script>
+		<!-- //requried-jsfiles-for owl -->
+
+<!-- animated-css -->
+		<link href="{% static "saunterer/css/animate.css" %}" rel="stylesheet" type="text/css" media="all">
+
+		<!-- Following block is used for moving text effect 
+		<script src="{% static "saunterer/js/wow.min.js" %}"></script>
+		<script>
+		 new WOW().init();
+		</script>
+-->
+
+<!-- animated-css -->
+</head>
+<body>
+
+<!--header start here-->
+<div class="banner">
+ <div class="header">
+   <div class="container">
+     <div class="header-main">
+	   <div class="logo wow bounceInLeft" data-wow-delay="0.3s">
+	     <a href= "{% url "saunterer:index" %}"><img src="{% static "saunterer/images/log.png" %}"  alt=""></a>
+	   </div>
+	   <div class="top-navg">
+			   <span class="menu"> <img src="images/icon.png" alt=""/></span>	
+			 <nav class="cl-effect-13">				
+				<ul class="res">
+					<li><a class="active" href="{% url "saunterer:index" %}">Home</a></li>
+					<li><a href="{% url "saunterer:about" %}">About</a></li>
+					<li><a href="{% url "saunterer:offer" %}">Walks</a></li>
+					<li><a href="{% url "blog:blog" %}">Blog</a></li>
+					<li><a href="{% url "saunterer:contact" %}">Contact</a></li>	
+				</ul>
+			</nav>
+			<!-- script-for-menu -->
+				 <script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.res" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>		    			
+	   </div>
+	    <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner-main">
+	    <div class="slider-bann wow bounceInRight" data-wow-delay="0.3s">
+	    <ul class="rslides" id="slider2">
+	      <li>
+	      	<h3>Welcome To The Saunterers</h3>
+	      	<h4>A Local Experience</h4>
+	      	  <div class="ban-btn">
+	      	   <a href="{% url "saunterer:about" %}" class="hvr-bounce-out">About</a>
+	      	  </div>
+	      </li>
+	      <li>
+	      	<h3>Explore India</h3>
+	      	<h4>At your own pace</h4>
+	      	  <div class="ban-btn">
+	      	  <a href="{% url "saunterer:offer" %}" class="hvr-bounce-out">Offers</a>
+	      	  </div>
+	      	</li>
+	      <li>
+	      	<h3>Walk and Discover</h3>
+	      	<h4>The colours of India like a local. </h4>
+	      	  <div class="ban-btn">
+	      	   <a href="{% url "saunterer:contact" %}" class="hvr-bounce-out">Contact</a>
+	      	  </div>
+	      </li>
+	    </ul>
+    </div>
+  </div>
+</div>
+<!--header end here-->
+<!--what we do strat here-->
+<div class="what-we-do">
+ <div class="container">
+    <div class="what-we-do-main  wow bounceInLeft" data-wow-delay="0.3s">
+    	 <h2>What We Do</h2>
+    	 <span class="lft-bar-we"> </span>
+	     <span class="rit-bar-we"> </span>
+		 {% block content %}
+
+		 {% endblock %}
+    	 <p> We're a group of passionate students who are curating new experiences 
+		 for the travellers each passing day. With our mission to make travellers 
+		 experience the true sense of India, we organise our Walking Tours of Delhi.
+		  Come and explore the city from the within like a local with our Guided Tour
+		 of Delhi and experience the city at your own pace. Learn about the history, culture, 
+		 local traditions, Indian food and much more on our regular free walking tours. 
+		 We will be there to make your experience of India memorable whether it rain, hail or shine.  </p>
+    	 <a href="{% url "saunterer:about" %}" class="hvr-bounce-out">Read More</a>
+    	<div class="clearfix"> </div>
+    </div>
+ </div>
+</div>
+<!--what we do end here-->
+<!--peoples start  here-->
+
+<!--peoples end here--> 
+<!--disk bar strat here-->
+<div class="disk">
+  <div class="container">
+  	<div class="disk-main">
+  		   <div class="col-md-8 disk-left wow bounceInLeft" data-wow-delay="0.3s">
+  		   	  <p>We are dedicated to provide the best traveling experience by customizing your walks.</p>
+  		   </div>
+  		   <div class="col-md-4 disk-right wow bounceInRight" data-wow-delay="0.3s">
+  		   	<a href="{% url "saunterer:offer" %}" class="hvr-bounce-out">Walks</a>
+  		   </div>
+  		<div class="clearfix"> </div>
+  	</div>
+  </div>
+</div>
+
+<!--disk bar end here-->
+<!--features strat here-->
+<div class="features">
+  <div class="container">
+  	<div class="features-main">
+  		<div class="features-top">
+  			<h3>Features</h3>
+  			<span class="lft-bar-fea"> </span>
+			<span class="rit-bar-fea"> </span>
+  		</div>
+  		<div class="features-bottom">
+	  		 <div class="col-md-6 features-left wow bounceInLeft" data-wow-delay="0.3s">
+	  		   	 <div class="feature-grids">
+		  		   	  <div class="fea-img">
+		  		   	  	<img src="{% static "saunterer/images/fe1.png" %}" alt=""> 
+		  		   	  </div>
+		  		   	  <div class="fea-text">
+		  		   	  	<h4>Pay according to your experience</h4>
+		  		   	  	<p>Choose between a wide variety of customized packages and pay accordingly.</p>
+		  		   	  </div>
+		  		   	<div class="clearfix"> </div>
+	  		   	  </div>
+	  		   	  <div class="feature-grids">
+		  		   	  <div class="fea-img">
+		  		   	  	<img src="{% static "saunterer/images/fe2.png" %}" alt=""> 
+		  		   	  </div>
+		  		   	  <div class="fea-text">
+		  		   	  	<h4> A true local experience</h4>
+		  		   	  	<p> Our prime focus is to make you feel home. To make you experience the diversity of India. </p>
+		  		   	  </div>
+		  		   	<div class="clearfix"> </div>
+	  		   	  </div>
+	  		   </div>
+	  		   <div class="col-md-6 features-right wow bounceInRight" data-wow-delay="0.3s">
+	  		   	 <div class="feature-grids">
+		  		   	  <div class="fea-img">
+		  		   	  	<img src="{% static "saunterer/images/fe3.png" %}" alt=""> 
+		  		   	  </div>
+		  		   	  <div class="fea-text">
+		  		   	  	<h4>Quality is our utmost priority</h4>
+		  		   	  	<p> Dedicated to provide the best experience to our travellers. </p>
+		  		   	  </div>
+		  		   	<div class="clearfix"> </div>
+	  		   	  </div>
+	  		   	  <div class="feature-grids">
+		  		   	  <div class="fea-img">
+		  		   	  	<img src="{% static "saunterer/images/fe4.png" %}" alt=""> 
+		  		   	  </div>
+		  		   	  <div class="fea-text">
+		  		   	  	<h4>Customized Walking Tours</h4>
+		  		   	  	<p> Every traveller is different. Set your tours according to your wishes.  </p>
+		  		   	  </div>
+		  		   	<div class="clearfix"> </div>
+	  		   	  </div>
+	  		   </div>
+	  		<div class="clearfix"> </div>
+  		</div>
+  	</div>
+  </div>
+</div>
+<!--features end here-->
+<!--visit places strat here-->
+<div class="visit">
+   <div class="container">
+   	<div class="visit-main wow bounceInRight" data-wow-delay="0.3s">
+   		  <div class="visit-top">
+   		  	 <h3>Visit</h3>
+			 <span class="lft-bar-visit"> </span>
+			<span class="rit-bar-visit"> </span>
+   		  </div>
+   		  <div class="visit-bottom">
+   		  	 <div class="col-md-4 visit-grid">
+   		  	 	<div class="item-1 item-type-spin">
+								<a class="item-hover swipebox" href="{% url "saunterer:offer" %}"  data-title="Vigor">
+										<div class="item-info">
+										<div class="headline">
+											Visit 
+											<div class="line"></div>
+												
+										</div>
+									</div>
+									<div class="mask"></div>
+								</a>
+							<div class="item-img">
+							<img src="{% static "saunterer/images/v1.jpg" %}" class="img-responsive" alt="" />
+							</div>
+				</div>	
+   		  	 	<h4><a href="">Old Dehi</a></h4>
+   		  	 	<p>It was once filled with mansions of nobles and members 
+							of the royal court, along with elegant mosques and gardens.
+							 Today, it still serves as the symbolic heart of metropolitan Delhi. </p>
+   		  	    <div class="visit-blog">
+				   <div class="visit-btn">
+				<!--      <a href="single.html">Read More</a> -->
+				   </div>
+				   <div class="visit-likes">
+				   
+				   </div>
+				  <div class="clearfix"> </div>
+				</div>
+			 </div>
+			 <div class="col-md-4 visit-grid">
+   		  	 	<div class="item-1 item-type-spin">
+								<a class="item-hover swipebox" href= "{% url "saunterer:offer" %}"  data-title="Vigor">
+										<div class="item-info">
+										<div class="headline">
+											Visit
+											<div class="line"></div>
+											<div class="date"></div>			
+										</div>
+									</div>
+									<div class="mask"></div>
+								</a>
+							<div class="item-img">
+							<img src="{% static "saunterer/images/v2.jpg" %}" class="img-responsive" alt="" />
+							</div>
+				</div>	
+   		  	 	<h4><a href= "{% url "saunterer:offer" %}">Connaught Place</a></h4>
+   		  	 	<p> one of the largest financial, commercial and business centres in New Delhi, India.
+					   It is often abbreviated as CP and houses the headquarters of several noted Indian firm </p>
+   		  	    <div class="visit-blog">
+				   <div class="visit-btn">
+		<!--		      <a href="single.html">Read More</a> -->
+				   </div>
+				   <div class="visit-likes">
+	
+				   </div>
+				  <div class="clearfix"> </div>
+				</div>
+			 </div>
+			 <div class="col-md-4 visit-grid">
+   		  	 	<div class="item-1  item-type-spin">
+								<a class="item-hover swipebox" href="single.html"  data-title="Vigor">
+										<div class="item-info">
+										<div class="headline">
+											Visit
+											<div class="line"></div>
+												
+										</div>
+									</div>
+									<div class="mask"></div>
+								</a>
+							<div class="item-img">
+							<img src="{% static "saunterer/images/v3.jpg" %}" class="img-responsive" alt="" />
+							</div>
+				</div>	
+   		  	 	<h4><a href="{% url "saunterer:offer" %}">Mehrauli </a></h4>
+   		  	 	<p>Mehrauli is one of the seven ancient cities that make up the present state of Delhi. 
+					This is where the well known astronomer Varaha-Mihira of Vikramaditya’s
+					 court lived. </p>
+   		  	  
+				   <div class="visit-likes">
+				    <a href="#"><span class="#">2k</span></a>
+				   </div>
+				  <div class="clearfix"> </div>
+				</div>
+			 </div>
+			<div class="clearfix"></div>
+   		  </div>
+   		<div class="clearfix"> </div>
+   	</div>
+   </div>
+</div>
+<!--visit places end here-->
+<!--footer start here-->
+<div class="map">
+  <div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-4 ftr-grids  wow bounceIn" data-wow-delay="0.4s">
+				<h4>Get in Touch</h4>
+				<ul class="get-touch">
+				
+					<li><span class="email"> </span><a href="mailto:connect@thesaunterers.com">connect@thesaunterers.com</a> </li>
+					<li><span class="phone"> </span>+91 86795 40001</li>
+				</ul>
+			</div>
+			<div class="col-md-4 ftr-grids  wow bounceIn" data-wow-delay="0.4s">
+				<h4>Follow Us</h4>
+				<ul class="mid-grid">
+					<li><a href="#"><span class="tw"> </span></a></li>
+					<li><a href="#"><span class="gmail"> </span></a> </li>
+					<li><a href="#"><span class="inst"> </span></a> </li>
+					<li><a href="#"><span class="pri"> </span></a> </li>					
+				</ul>
+			</div>
+			
+
+
+
+</body>
+</html>

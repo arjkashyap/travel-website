@@ -1,0 +1,374 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+{% load staticfiles %}
+
+<title>Saunterers: Offers</title>
+
+<link href="{% static "saunterer/css/bootstrap.css"%}" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{%  static "saunterer/js/jquery-1.11.0.min.js" %}"></script>
+<!-- Custom Theme files -->
+<link href="{% static "saunterer/css/style.css" %}" rel="stylesheet" type="text/css" media="all"/>
+
+
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, , SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+<!-- animated-css 
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		
+		<script>
+		 new WOW().init();
+		</script>
+		-->
+<!-- animated-css -->
+
+
+</head>
+<body>
+
+<!--header start here-->
+<div class="header">
+   <div class="container">
+     <div class="header-main">
+	   <div class="logo wow bounceInLeft" data-wow-delay="0.3s">
+	    <a href= "{% url "saunterer:index" %}"><img src="{% static "saunterer/images/log.png" %}"  alt=""></a>
+	   </div>
+	   <div class="top-navg">
+			   <span class="menu"> <img src="{% static "saunterer/images/icon.png" %}" alt=""/></span>		
+			    <nav class="cl-effect-13">				
+				<ul class="res">
+					<li><a href="{% url "saunterer:index" %}">Home</a></li>
+					<li><a href="{% url "saunterer:about" %}">About</a></li>
+					<li><a class="active" href="{% url "saunterer:offer" %}">Walks</a></li>
+					<li><a href="{% url "blog:blog" %}">Blog</a></li>
+					<li><a href="{% url "saunterer:contact" %}">Contact</a></li>
+				</ul>
+			 </nav>
+			<!-- script-for-menu -->
+				 <script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.res" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>					
+	   </div>
+	    <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+<!--header end here-->
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Saunteres: Take a walk with us" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	
+	<!-- css files -->
+    <link href="{% static "saunterer/walks/css/bootstrap.css" %}" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="{% static "saunterer/walks/css/style.css" %}" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="{% static "saunterer/walks/css/font-awesome.min.css" %}" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	
+	<link href="{% static "saunterer/walks/css/css_slider.css" %}" type="text/css" rel="stylesheet" media="all">
+
+	<!-- google fonts -->	
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<!-- //google fonts -->
+	
+</head>
+<body>
+
+<!-- header -->
+<header>
+	<div class="container">
+		<!-- nav -->
+		
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+
+<!-- banner -->
+<section class="banner_w3lspvt" id="home">
+	<div class="csslider infinity" id="slider1">
+		<input type="radio" name="slides" checked="checked" id="slides_1" />
+		<input type="radio" name="slides" id="slides_2" />
+		<input type="radio" name="slides" id="slides_3" />
+		<input type="radio" name="slides" id="slides_4" />
+		<ul>
+			<li>
+				<div class="banner-top">
+					<div class="overlay">
+						<div class="container">
+							<div class="w3layouts-banner-info">
+								<h3 class="text-wh">Jama Masjid</h3>
+								<h4 class="text-wh">Old Delhi</h4>
+								<div class="buttons mt-4">
+									<a href="{% url "saunterer:contact" %}" class="btn mr-2">Contact</a>
+									<a href="{% url "saunterer:tour_form" %}" class="btn">Book a Tour</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="banner-top1">
+					<div class="overlay">
+						<div class="container">
+							<div class="w3layouts-banner-info">
+								<h3 class="text-wh">Connaught Place</h3>
+								<h4 class="text-wh">New Delhi</h4>
+								<div class="buttons mt-4">
+									<a href="{% url "saunterer:contact" %}" class="btn mr-2">Contact</a>
+									<a href="booking.html" class="btn">Book a Tour</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="banner-top2">
+					<div class="overlay">
+						<div class="container">
+							<div class="w3layouts-banner-info">
+								<h3 class="text-wh">Red Fort</h3>
+								<h4 class="text-wh"> Chandni Chowk</h4>
+								<div class="buttons mt-4">
+									<a href="about.html" class="btn mr-2">Contact</a>
+									<a href="#" class="btn">Book a Tour</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="banner-top3">
+					<div class="overlay1">
+						<div class="container">
+							<div class="w3layouts-banner-info">
+								<h3 class="text-wh">Old Delhi</h3>
+								<h4 class="text-wh">Join us</h4>
+								<div class="buttons mt-4">
+									<a href="about.html" class="btn mr-2">Contact</a>
+									<a href="booking.html" class="btn">Book a Tour</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="arrows">
+			<label for="slides_1"></label>
+			<label for="slides_2"></label>
+			<label for="slides_3"></label>
+			<label for="slides_4"></label>
+		</div>
+	</div>
+</section>
+<!-- //banner -->
+
+<!-- about -->
+<section class="about py-5">
+	<div class="container py-lg-5 py-sm-4">
+		<div class="row">
+			<div class="col-lg-6 about-left">
+				<h3 class="mt-lg-3">
+				<strong>Free Walking Tour of Old Delhi</strong>
+			  Delhi is a place where modernity weaves itself with the relics 
+				of the past. </h3>
+				<p class="mt-4">A trip to this city is incomplete without exploring the heart of the city,
+				 Old Delhi. The centre of chaos and hustle bustle, strolling through the lanes of Old Delhi 
+				is a must have experience while in Delhi. Our New Delhi Walking Tour will take you through
+				 the happening streets of Chandni Chowk, whether you want to see the religious places or
+				  grab the finger licking Indian food, want to see the art and the architecture, or people 
+				  and the lifestyle, we help you experience the sights, 
+				the tastes and the history through the eye's of passionate 
+				local guides.</p>
+				<p class="mt-3"> Our tour would make you feel like dipping into the sea of the most dramatic scenes of history that will show you how once a well-organised city turned into the biggest commercial hub of India, Old Delhi. Our Walking Tour of Delhi covers Chandni Chowk, the top number in the checklist of every traveller, Jama Masjid, the biggest mosque in India, different religious houses, insight in the daily lives of people in and around the city and much more.
+Your experience is our utmost priority. Explore the city at your own pace with a passionate guide that will take you on a journey of Old Delhi. Experience the city like never before at your own convenience with no upfront money to build your trust. If you loved the tour, pay what you think it was worth it. It didn't meet up to your expectation? Tell us how we can improve. 
+</p>
+			</div>
+			<div class="col-lg-6 about-right text-lg-right mt-lg-0 mt-5">
+				<img src="{% static "saunterer/images/logoMain.png" %}" alt="" class="img-fluid abt-image" />
+			</div>
+		</div>
+		
+	
+</section>
+<!-- //about -->
+
+<!-- how to book -->
+<section class="book py-5">
+	<div class="container py-lg-5 py-sm-3">
+		<h2 class="heading text-capitalize text-center"> How To Plan Your Tour</h2>
+		<div class="row mt-5 text-center">
+			<div class="col-lg-4 col-sm-6">
+				<div class="grid-info">
+					<div class="icon">
+						<span class="fa fa-map-signs"></span>
+					</div>
+					<h4>Pick Destination</h4>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt-sm-0 mt-5">
+				<div class="grid-info">
+					<div class="icon">
+						<span class="fa fa-calendar"></span>
+					</div>
+					<h4>Select Date</h4>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt-lg-0 mt-5">
+				<div class="grid-info">
+					<div class="icon">
+						<span class="fa fa-gift"></span>
+					</div>
+					<h4>Enjoy the Trip</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //how to book -->
+
+<!-- tour packages -->
+<section class="packages py-5">
+	<div class="container py-lg-4 py-sm-3">
+		<h3 class="heading text-capitalize text-center"> Discover our tour packages</h3>
+		<p class="text mt-2 mb-5 text-center">Vestibulum tellus neque, sodales vel mauris at, rhoncus finibus augue. Vestibulum urna ligula, molestie at ante ut, finibus vulputate felis.</p>
+		<div class="row">
+			<div class="col-lg-3 col-sm-6">
+				<div class="image-tour position-relative">
+					<img src="{% static "saunterer/images/n3.jpg" %}" alt="" class="img-fluid" />
+					<!--<p><span class="fa fa-tags"></span> <span>20$</span></p> -->
+				</div>
+				<div class="package-info">
+					<h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span> Jama Masjid </h6>
+					<h5 class="my-2">Old Delhi</h5>
+					<p class="">The Masjid-i Jahān-Numā
+					is one of the largest mosques in India. Built by Mughal Emperor Shah Jahan 
+					between 1644 and 1656.</p>
+					<!--<ul class="listing mt-3">
+						<li><span class="fa fa-clock-o mr-2"></span>Duration : <span>10 Days</span></li>
+					</ul>-->
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="image-tour position-relative">
+					<img src="{% static "saunterer/images/n2.jpg" %}" alt="" class="img-fluid" />
+					<!--<p><span class="fa fa-tags"></span> <span>20$</span></p> -->
+				</div>
+				<div class="package-info">
+					<h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span>Connaught Place</h6>
+					<h5 class="my-2">New Delhi</h5>
+					<p class=""> Business & financial hub, centered on a ring of colonnaded 
+					Georgian-style buildings, bars and Indian restaurants</p>
+					<ul class="listing mt-3">
+			<!--			<li><span class="fa fa-clock-o mr-2"></span>Duration : <span>10 Days</span></li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+				<div class="image-tour position-relative">
+					<img src="{% static "saunterer/images/n3.jpg" %}" alt="" class="img-fluid" />
+			<!--		<p><span class="fa fa-tags"></span> <span>20$</span></p> -->
+				</div>
+				<div class="package-info">
+					<h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span>Red Fort.</h6>
+					<h5 class="my-2">Chandni Chowk</h5>
+					<p class="">The Red Fort is a historic fort in the city of Delhi in India. 
+					Main residence of the emperors of the Mughal dynasty for nearly 200 years</p>
+					<ul class="listing mt-3">
+				<!--		<li><span class="fa fa-clock-o mr-2"></span>Duration : <span>10 Days</span></li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+				<div class="image-tour position-relative">
+					<img src="{% static "saunterer/images/n4.jpg" %}" alt="" class="img-fluid" />
+			<!--		<p><span class="fa fa-tags"></span> <span>20$</span></p>  -->
+				</div>
+				<div class="package-info">
+					<h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span>Old Delhi</h6>
+				<!--	<h5 class="my-2">Sodales vel mauris</h5> -->
+					<p class="">Old Delhi or Purani Dilli was founded as a walled city of Delhi,
+					 India, founded as Shahjahanabad in 1639, when Shah Jahan, the Mughal emperor 
+					 at the time, decided to shift the Mughal capital from Agra.</p>
+					<ul class="listing mt-3">
+	<!--					<li><span class="fa fa-clock-o mr-2"></span>Duration : <span>10 Days</span></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="view-package text-center mt-4">
+			<a href="{% url "saunterer:contact" %}">Know more</a>
+		</div>
+	</div>
+</section>
+<!-- tour packages -->
+
+
+	
+
+</body>
+</html>
+<!--footer start here-->
+<div class="map">
+  <div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-4 ftr-grids  wow bounceIn" data-wow-delay="0.4s">
+				<h4>Get in Touch</h4>
+				<ul class="get-touch">
+				
+					<li><span class="email"> </span><a href="mailto:connect@thesaunterers.com">connect@thesaunterers.com</a> </li>
+		<!--	<li><span class="phone"> </span>+91 86795 40001</li> -->
+				</ul>
+			</div>
+			<div class="col-md-4 ftr-grids  wow bounceIn" data-wow-delay="0.4s">
+				<h4>Follow Us</h4>
+				<ul class="mid-grid">
+					<li><a href="#"><span class="tw"> </span></a></li>
+					<li><a href="#"><span class="gmail"> </span></a> </li>
+					<li><a href="#"><span class="inst"> </span></a> </li>
+					<li><a href="#"><span class="pri"> </span></a> </li>					
+				</ul>
+			</div>
+			
+
+</body>
+</html>
+

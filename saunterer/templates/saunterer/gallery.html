@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Saunterers: Gallery</title>
+{% load staticfiles %}
+
+<link href="{% static "saunterer/css/bootstrap.css" %}" rel="stylesheet" type="text/css" media="all">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{%  static "saunterer/js/jquery-1.11.0.min.js" %}"></script>
+<!-- Custom Theme files -->
+<link href="{% static "saunterer/css/style.cs" %}s" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Tour Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+<!-- //end-smoth-scrolling -->
+<link rel="stylesheet" href="{% static "saunterer/css/base.css" %}">
+<script src="{% static "saunterer/js/modernizr.min.js" %}"></script>
+<script src="{% static "saunterer/js/jquery.fitvids.js" %}"></script>
+<script src="{% static "saunterer/js/script.js" %}"></script>
+
+
+</head>
+<body>
+<!--header start here-->
+<div class="header">
+   <div class="container">
+     <div class="header-main">
+	   <div class="logo wow bounceInLeft" data-wow-delay="0.3s">
+	    <a href= "{% url "saunterer:index" %}"><img src="{% static "saunterer/images/log.png" %}"  alt=""></a>
+	   </div>
+	   <div class="top-navg">
+			   <span class="menu"> <img src="images/icon.png" alt=""/></span>		
+		   <nav class="cl-effect-13">				
+				<ul class="res">
+					<li><a href="{% url "saunterer:index" %}">Home</a></li>
+					<li><a href="{% url "saunterer:about" %}">About</a></li>
+					<li><a href="{% url "saunterer:offer" %}">Offers</a></li>
+					<li><a class="active" href="{% url "saunterer:gallery" %}">Gallery</a></li>
+					<li><a href="{% url "saunterer:contact" %}">Contact</a></li>
+				</ul>
+		  </nav>
+			<!-- script-for-menu -->
+				 <script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.res" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>					
+	   </div>
+	    <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+<!--header end here-->
+<!--content-->
+<div class="gallery">
+	<div class="container">
+		<div class="galley-grid wow bounceInLeft" data-wow-delay="0.3s">
+			<h1>Gallery</h1>
+			<span class="lft-bar-gallery"> </span>
+			<span class="rit-bar-gallery"> </span>
+		</div>
+		<div class="project-top wow fadeInUp animated" data-wow-delay=".5s">
+			<div class="col-md-4 project">	
+				<div class="projectThumbnail">
+					<div class="projectThumbnailHover projcet-ro">
+						<h4>Travel</h4>
+						<h5>Take a Walk with us</h5>
+					</div>					
+					<img src="{% static "saunterer/images/g1.jpg" %}" alt="Project 01" class="img-responsive thumbnailImage" />
+				</div>
+				<div class="projectInfo">
+					<div class="projectNavClose">
+						<button class="closeButton"><img src="{% static "saunterer/images/cross.png" %}" alt=""></button>
+					</div>
+					<div class="clearfix"> </div>
+					<h4>Dedicated to provide the best traveling experience</h4>
+					<p>
+						Join us on a safari to the depths of India. Live the life of a local.</p>			
+				</div>
+			</div>
+			<div class="col-md-4 project">	
+				<div class="projectThumbnail">
+					<div class="projectThumbnailHover projcet-ro">
+						<h4>Travel</h4>
+						<h5>Take a Walk with us</h5>
+					</div>
+					
+					<img src="{% static "saunterer/images/g2.jpg" %}" alt="Project 01" class="img-responsive thumbnailImage" />
+				</div>
+				<div class="projectInfo">
+					<div class="projectNavClose">
+						<button class="closeButton"><img src="{% static "saunterer/images/cross.png" %}" alt=""></button>
+					</div>
+					<div class="clearfix"> </div>
+					<h4>Dedicated to provide the best traveling experience</h4>
+					<p>
+						Join us on a safari to the depths of India. Live the life of a local.
+				  Experience what it feels to be a part of India.</p>					
+				</div>
+			</div>
+			<div class="col-md-4 project">	
+				<div class="projectThumbnail">
+					<div class="projectThumbnailHover projcet-ro">
+						<h4>Travel</h4>
+						<h5>Take a Walk with us</h5>
+					</div>
+					
+					<img src="{% static "saunterer/images/g3.jpg" %}" alt="Project 01" class="img-responsive thumbnailImage" />
+				</div>
+				<div class="projectInfo">
+					<div class="projectNavClose">
+						<button class="closeButton"><img src="{% static "saunterer/images/cross.png" %}" alt=""></button>
+					</div>
+					<div class="clearfix"> </div>
+					<h4>Dedicated to provide the best traveling experience</h4>
+					<p>
+						Join us on a safari to the depths of India. Live the life of a local.</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="col-md-4 project">	
+				<div class="projectThumbnail">
+					<div class="projectThumbnailHover projcet-ro">
+						<h4>Travel</h4>
+						<h5>Take a Walk with us</h5>
+					</div>
+					
+					<img src="{% static "saunterer/images/g4.jpg" %}" alt="Project 01" class="img-responsive thumbnailImage" />
+				</div>
+				<div class="projectInfo">
+					<div class="projectNavClose">
+						<button class="closeButton"><img src="{% static "saunterer/images/cross.png" %}" alt=""></button>
+					</div>
+					<div class="clearfix"> </div>
+					<h4>Dedicated to provide the best traveling experience</h4>
+					<p>
+						Join us on a safari to the depths of India. Live the life of a local.</p>
+				</div>
+			</div>
+			<div class="col-md-4 project">	
+				<div class="projectThumbnail">
+					<div class="projectThumbnailHover projcet-ro">
+						<h4>Travel</h4>
+						<h5>Take a Walk with us</h5>
+					</div>
+					
+					<img src="{% static "saunterer/images/g5.jpg" %}" alt="Project 01" class="img-responsive thumbnailImage" />
+				</div>
+				<div class="projectInfo">
+					<div class="projectNavClose">
+						<button class="closeButton"><img src="{% static "saunterer/images/cross.png" %}" alt=""></button>
+					</div>
+					<div class="clearfix"> </div>
+					<h4>Dedicated to provide the best traveling experience</h4>
+					<p>
+						Join us on a safari to the depths of India. Live the life of a local.</p>
+				</div>
+			</div>
+			<div class="col-md-4 project">	
+				<div class="projectThumbnail">
+					<div class="projectThumbnailHover projcet-ro">
+						<h4>Travel</h4>
+						<h5>Take a Walk with us</h5>
+					</div>
+					
+					<img src="{% static "saunterer/images/g6.jpg" %}" alt="Project 01" class="img-responsive thumbnailImage" />
+				</div>
+				<div class="projectInfo">
+					<div class="projectNavClose">
+						<button class="closeButton"><img src="{% static "saunterer/images/cross.png" %}" alt=""></button>
+					</div>
+					<div class="clearfix"> </div>
+					<h4>Dedicated to provide the best traveling experience</h4>
+					<p>
+						Join us on a safari to the depths of India. Live the life of a local.</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="col-md-4 project">	
+				<div class="projectThumbnail">
+					<div class="projectThumbnailHover projcet-ro">
+						<h4>Travel</h4>
+						<h5>Take a Walk with us</h5>
+					</div>
+					
+					<img src="{% static "saunterer/images/g7.jpg" %}" alt="Project 01" class="img-responsive thumbnailImage" />
+				</div>
+				<div class="projectInfo">
+					<div class="projectNavClose">
+						<button class="closeButton"><img src="{% static "saunterer/images/cross.png" %}" alt=""></button>
+					</div>
+					<div class="clearfix"> </div>
+					<h4>Dedicated to provide the best traveling experience</h4>
+					<p>
+						Join us on a safari to the depths of India. Live the life of a local.</p>
+				</div>
+			</div>
+			<div class="col-md-4 project">	
+				<div class="projectThumbnail">
+					<div class="projectThumbnailHover projcet-ro">
+						<h4>Travel</h4>
+						<h5>Take a Walk with us</h5>
+					</div>
+					
+					<img src="{% static "saunterer/images/g8.jpg" %}" alt="Project 01" class="img-responsive thumbnailImage" />
+				</div>
+				<div class="projectInfo">
+					<div class="projectNavClose">
+						<button class="closeButton"><img src="{% static "saunterer/images/cross.png" %}" alt=""></button>
+					</div>
+					<div class="clearfix"> </div>
+					<h4>Dedicated to provide the best traveling experience</h4>
+					<p>
+						Join us on a safari to the depths of India. Live the life of a local.</p>
+				</div>
+			</div>
+			<div class="col-md-4 project">	
+				<div class="projectThumbnail">
+					<div class="projectThumbnailHover projcet-ro">
+						<h4>Travel</h4>
+						<h5>Take a Walk with us</h5>
+					</div>
+					
+					<img src="{% static "saunterer/images/g9.jpg" %}" alt="Project 01" class="img-responsive thumbnailImage" />
+				</div>
+				<div class="projectInfo">
+					<div class="projectNavClose">
+						<button class="closeButton"><img src="{% static "saunterer/images/cross.png" %}" alt=""></button>
+					</div>
+					<div class="clearfix"> </div>
+					<h4>Dedicated to provide the best traveling experience</h4>
+					<p>Join us on a safari to the depths of India. Live the life of a local.</p>
+				</div>
+			</div>
+			
+			<div class="clearfix"> </div>
+		</div>		
+	</div>
+</div>
+<!---->
+<!--footer start here-->
+<div class="map">
+  <div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-4 ftr-grids  wow bounceIn" data-wow-delay="0.4s">
+				<h4>Get in Touch</h4>
+				<ul class="get-touch">
+				
+					<li><span class="email"> </span><a href="mailto:connect@thesaunterers.com">connect@thesaunterers.com</a> </li>
+					<li><span class="phone"> </span>+91 86795 40001</li>
+				</ul>
+			</div>
+			<div class="col-md-4 ftr-grids  wow bounceIn" data-wow-delay="0.4s">
+				<h4>Follow Us</h4>
+				<ul class="mid-grid">
+					<li><a href="#"><span class="tw"> </span></a></li>
+					<li><a href="#"><span class="gmail"> </span></a> </li>
+					<li><a href="#"><span class="inst"> </span></a> </li>
+					<li><a href="#"><span class="pri"> </span></a> </li>					
+				</ul>
+			</div>
+			
+
+</body>
+</html>
